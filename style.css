@@ -3,23 +3,27 @@ body{
     display: grid;
     justify-content: center;
     text-align: center;
-    background-color: #c9c9c9;
+    background-image: linear-gradient(#6c3c85, #1d0f25 60%);
+    background-attachment: fixed;
     font-family: "Nunito";
 }
 
 /* Link Style */
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 p{
+    font-size: larger;
     margin-block: 8px;
+    color: white;
 }
 .divPrincipal{
     border-radius: 5px;
     text-align: left;
-    background-color: #928acf;
+    justify-items: center;
+    background-color: #331f4f54;
     width: fit-content;
     min-height: 60vh;
     margin: 0 80px;
@@ -30,21 +34,32 @@ p{
 .divItem{
     font-family: "Nunito";
     border-radius: 5px;
-    background-color: #6c65a7;
+    border: solid #593d6b 6px;
+    border-bottom: solid #34204f 5px;
+    border-top: solid #34204f 5px;
+    background-color: #4b2b63;
     text-align: center;
-    padding: 15px 30px 0px 30px;
     margin: 15px;
     cursor: pointer;
+}
+.divItem:active{
+    border: solid #34204f 6px;
+    border-bottom: solid #593d6b 5px;
+    border-top: solid #593d6b 5px;
 }
 .celular{
     display: none;
 }
 @media (max-width: 600px) {
-    
-    div{
-        margin: 0 10px;
-        padding: 10px;
-        text-align: center;
+
+    .divItem{
+        margin-block: 35px;
+        width: 60vw;
+    }
+    .divPrincipal{
+        width: 80vw;
+        padding: 0;
+        margin: 0;
     }
     .celular{
         display: grid;
