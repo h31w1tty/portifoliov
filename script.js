@@ -20,9 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         p.textContent = versao.nome;
 
         divItem.appendChild(p);
-        divItem.appendChild(document.createElement("br"));
-        divItem.appendChild(document.createElement("br"));
-        divItem.appendChild(document.createElement("br"));
         divPrincipal.appendChild(divItem);
 
         function abrirLink(onclick){

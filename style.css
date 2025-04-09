@@ -9,15 +9,11 @@ body{
 }
 
 /* Link Style */
-a{
-    color: white;
-    text-decoration: none;
-}
 
 p{
     font-size: larger;
     margin-block: 8px;
-    color: white;
+    color: rgb(175, 175, 175);
 }
 .divPrincipal{
     border-radius: 5px;
@@ -53,6 +49,7 @@ p{
 @media (max-width: 600px) {
 
     .divItem{
+        padding-block: 20px;
         margin-block: 35px;
         width: 60vw;
     }
